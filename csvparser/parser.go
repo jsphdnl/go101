@@ -36,7 +36,6 @@ func Parse(fileName string) ([]*Record, error) {
 		}
 		if err != nil {
 			log.Fatal(err)
-			fmt.Println("lol")
 			return nil, err
 		}
 		newRecord := &Record {record[0], record[1]}

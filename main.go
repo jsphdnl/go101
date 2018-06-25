@@ -33,7 +33,6 @@ func main() {
 	records, err := csvparser.Parse(fileName)
 	if err != nil {
 		log.Fatal(err)
-		fmt.Println("lol2")
 	}
 	score := core.Startquiz(records)
 	sbr, _ := json.Marshal(&score)

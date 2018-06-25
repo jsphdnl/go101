@@ -32,9 +32,7 @@ func Startquiz(recs []*csvparser.Record) Score {
 }
 
 func askquestion(r *csvparser.Record, s *Score, cnt int){
-	fmt.Println("")
-	fmt.Println("")
-	fmt.Println("Question No :",cnt," ", r.Question)
+	fmt.Println("\n\nQuestion No :",cnt," ", r.Question)
 	reader := bufio.NewReader(os.Stdin)
 	str, err := reader.ReadString('\n')
 	fmt.Println("You have entered: ", str)
